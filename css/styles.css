@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -208,7 +210,7 @@ button.btn {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(14, 13, 66, 0.795) 0%, rgba(14, 13, 66, 0.795) 100%);
     ;
     border: 0;
     font-family: 'Roboto', sans-serif;
@@ -247,7 +249,7 @@ button.btn:active {
 button.btn:focus {
     outline: 0;
     opacity: 0.6;
-    background: #26A69A;
+    background: #10645ca2;
     ;
     color: #fff;
 }
@@ -307,14 +309,14 @@ h3 {
 }
 
 ::-moz-selection {
-    background:linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    background:linear-gradient(to bottom, rgba(18, 17, 87, 0.8) 0%, rgba(18, 17, 87, 0.8) 100%);
     ;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(18, 17, 87, 0.8) 0%, rgba(18, 17, 87, 0.8) 100%);
     ;
     color: #fff;
     text-shadow: none;
@@ -380,7 +382,7 @@ h3 {
 .form-top {
     overflow: hidden;
     padding: 0 25px 15px 25px;
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(14, 13, 66, 0.795) 0%, rgba(14, 13, 66, 0.795) 100%);
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
@@ -419,4 +421,16 @@ form .form-bottom .input-error {
 
 form.registration-form fieldset {
     display: none;
+}
+
+.alert{
+  text-align: center;
+  padding: 10px;
+  background: #5cce77;
+  color :white;
+  display: none;
+}
+
+.title{
+  font-family: 'Righteous', cursive;
 }
