@@ -82,7 +82,7 @@
         $('#name').css("border" ,"1px solid #F90A0A");
         setTimeout(function(){
           $('#name_error_msg').hide();
-        },5000);
+        },10000);
       }
     }
     
