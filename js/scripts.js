@@ -140,25 +140,10 @@
         },5000);
       }
     }
-
-
-    
-    // $('.registration-form input[type="text"]').on('focus', function () {
-    //     $(this).removeClass('input-error');
-    // });
-    
     // next step
     $('.registration-form .btn-next').on('click', function () {
         var parent_fieldset = $(this).parents('fieldset');
         var next_step = true;
-
-        
-        // parent_fieldset.find('input[name="name"],input[name="email"],input[name="phone"]').each(function () {
-        //     if ($(this).val() !== "") {
-        //          next_step = true;
-        //     } 
-        // });
-        
 
         if (next_step) {
             parent_fieldset.fadeOut(400, function () {
@@ -168,79 +153,14 @@
 
     });
 
-    // function check_statement(){
-    //   $('#state_error_msg').hide();
-    //   var nameValue = $('#statement').val();
-      
-    //   if(nameValue !== ''){
-    //     $('#statement').css("border" ,"1px solid #34F458");
-    //     $('#state_error_msg').hide();
-    //   }
-    //   else{
-    //     $('#state_error_msg').html("Please write your Idea statement!");
-    //     $('#state_error_msg').show();
-    //     $('#statement').css("border" ,"1px solid #F90A0A");
-    //     setTimeout(function(){
-    //       $('#state_error_msg').hide();
-    //     },5000);
-    //   }
-    // }
-
-    // function check_desc(){
-    //   $('#desc_error_msg').hide();
-    //   var nameValue = $('#description').val();
-      
-    //   if(nameValue !== ''){
-    //     $('#description').css("border" ,"1px solid #34F458");
-    //     $('#desc_error_msg').hide();
-    //   }
-    //   else{
-    //     $('#desc_error_msg').html("Please Describe your idea!");
-    //     $('#desc_error_msg').show();
-    //     $('#description').css("border" ,"1px solid #F90A0A");
-    //     setTimeout(function(){
-    //       $('#desc_error_msg').hide();
-    //     },5000);
-    //   }
-    // }
-
-    // function check_how(){
-    //   $('#how_error_msg').hide();
-    //   var nameValue = $('#how').val();
-      
-    //   if(nameValue !== ''){
-    //     $('#how').css("border" ,"1px solid #34F458");
-    //     $('#how_error_msg').hide();
-    //   }
-    //   else{
-    //     $('#how_error_msg').html("Please Describe your idea!");
-    //     $('#how_error_msg').show();
-    //     $('#how').css("border" ,"1px solid #F90A0A");
-    //     setTimeout(function(){
-    //       $('#how_error_msg').hide();
-    //     },5000);
-    //   }
-    // } 
-    // previous step
+    
     $('.registration-form .btn-previous').on('click', function () {
         $(this).parents('fieldset').fadeOut(400, function () {
             $(this).prev().fadeIn();
         });
     });
 
-    // submit
-    // $('.registration-form').on('submit', function (e) {
-
-    //     $(this).find('input[type="text"],input[type="email"]').each(function () {
-    //         if ($(this).val() == "") {
-    //             e.preventDefault();
-    //             $(this).addClass('input-error');
-    //         } else {
-    //             $(this).removeClass('input-error');
-    //         }
-    //     });
-
-    // });
+    
     $('#wrong').hide();
     $('#form_submit').click(function(){
       $('input').each(function() {
