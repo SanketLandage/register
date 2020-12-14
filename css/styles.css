@@ -249,7 +249,7 @@ button.btn:active {
 button.btn:focus {
     outline: 0;
     opacity: 0.6;
-    background: #10645ca2;
+    background: #000000a2;
     ;
     color: #fff;
 }
@@ -258,7 +258,7 @@ button.btn:active:focus,
 button.btn.active:focus {
     outline: 0;
     opacity: 0.6;
-    background: #26A69A;
+    background: #000000;
     ;
     color: #fff;
 }
@@ -282,7 +282,7 @@ strong {
 a,
 a:hover,
 a:focus {
-    color: #26A69A;
+    color: #ffffff;
     ;
     text-decoration: none;
     -o-transition: all .3s;
@@ -327,7 +327,7 @@ h3 {
     height: 50px;
     margin: 0 5px;
     padding: 16px 20px 0 20px;
-    background: #26A69A;
+    background: #121461;
     font-size: 16px;
     font-weight: 300;
     line-height: 16px;
@@ -444,4 +444,44 @@ form.registration-form fieldset {
 }
 .title{
   font-family: 'Righteous', cursive;
+}
+
+.bgMod{
+  background : linear-gradient(to bottom, rgba(14, 12, 10, 0.562) 0%, rgba(14, 12, 10, 0.562) 100%), url("../assets/img/win1.png");
+  background-repeat: no-repeat ;
+  background-position: center; 
+  color:white;
+}
+.modHead{
+  background : linear-gradient(to bottom, rgba(2, 2, 5, 0.856) 0%, rgb(2, 2, 5, 0.856) 100%);
+  color :white;
+  font-family: 'Righteous', cursive;
+}
+.modBut{
+    height: 35px;
+    margin: 0;
+    padding-left: 5px;
+    padding-right:5px;
+    vertical-align: middle;
+    background: linear-gradient(to bottom, rgba(2, 2, 5, 0.856) 0%, rgba(2, 2, 5, 0.856) 100%);
+    
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 35px;
+    color: #fff;
+    max-width: 200px;
+
+}
+.tcF{
+  color: #121461;
+  
+}
+a:hover{
+  color: black;
+}
+
+.modal{
+  max-height: 500px;
 }

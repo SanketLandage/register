@@ -40,7 +40,7 @@ function submitForm(e){
     document.querySelector('.alert').style.display="block";
     setTimeout(function(){
         document.querySelector('.alert').style.display="none";
-    },5000);
+    },8000);
 
     document.getElementById('registerForm').reset();
     

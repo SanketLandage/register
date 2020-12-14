@@ -85,6 +85,7 @@
         },5000);
       }
     }
+    
 
     function check_phone(){
       $('#phone_error_msg').hide();
@@ -149,11 +150,9 @@
     // next step
     $('.registration-form .btn-next').on('click', function () {
         var parent_fieldset = $(this).parents('fieldset');
-        var next_step = false;
+        var next_step = true;
 
-        if( $('#name').val() !== '' &&  $('#email').val() !== '' &&  $('#phone').val() !== '' ){
-          next_step= true;
-        }
+        
         // parent_fieldset.find('input[name="name"],input[name="email"],input[name="phone"]').each(function () {
         //     if ($(this).val() !== "") {
         //          next_step = true;
@@ -254,8 +253,11 @@
   //     });
   // });
   
-    
-   
+  setTimeout(function(){
+    $('.modal').modal({show:true});
+  }, 4000);
+  
+  
 });
 
 })(jQuery); // End of use strict
