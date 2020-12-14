@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="form-bottom">
                                         <div class="form-group" id="profit" required>
-                                            <p>1. Profitable or Non-profitable idea ? *</p>
+                                            <p>1. Profitable or Non-profitable idea ? <span class="compul">*</span></p>
                                             <input type="radio" id="p1" value="Profitable" name="pr">
                                             <label for="p1">Profitable</label>
                                             <input type="radio" id="p2" value="NonProfit" name="pr">
@@ -110,7 +110,7 @@
                                             
                                         </div><hr>
                                         <div class="form-group mt-2" required >
-                                            <p>2. Idea stage or running business ? *</p>
+                                            <p>2. Idea stage or running business ? <span class="compul">*</span></p>
                                             <input type="radio" id="idea" value="idea_only" name="idea">
                                             <label for="idea">Just a idea</label>
                                             <input type="radio" id="business" value="Running business" name="idea">
@@ -118,30 +118,30 @@
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>3. Idea Statement *</p>
+                                            <p>3. Idea Statement <span class="compul">*</span></p>
                                             <input type="text" id="statement" class="form-control" >
                                             <span class="align-self-center" id="state_error_msg"></span>
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>4. Idea Description *</p>
+                                            <p>4. Idea Description <span class="compul">*</span></p>
                                             <textarea name="desc" id="description" cols="30" rows="3" class="form-control" ></textarea>
                                             <span class="align-self-center" id="desc_error_msg"></span>
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>5. How did you came across this idea ? *</p>
+                                            <p>5. How did you came across this idea ? <span class="compul">*</span></p>
                                             <textarea name="how" id="how" cols="30" rows="2" class="form-control" ></textarea>
                                             <span class="align-self-center" id="how_error_msg"></span>
                                         </div><hr>
                                         <div class="form-group " required>
-                                            <p>6. What is the end goal you expect the business to achieve ? *</p>
+                                            <p>6. What is the end goal you expect the business to achieve ? <span class="compul">*</span></p>
                                             <textarea name="goal" id="goal" cols="30" rows="2" class="form-control" ></textarea>
                                         </div><hr>
                                         <div class="form-group" required>
-                                            <input type="radio" id="Tc" name="Tc" value="TnC accepted">
-                                            <label for="Tc" >I agree to all terms and conditions</label>
-                                            <p class="text-center"><a href="./Terms.html">Terms and conditions </a></p>
+                                            <input type="radio" id="Tc" name="Tc" value="TnC accepted" required>
+                                            <label for="Tc" >I agree to all terms and conditions</label> <a href="./Terms.html">Read T&c </a>
+                                            <p class="text-center"></p>
                                         </div>
                                         <button type="button" class="btn btn-previous mt-1">Previous</button>
                                         <button type="submit" class="btn mt-1" id="form_submit">Submit</button><hr>

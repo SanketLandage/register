@@ -439,7 +439,9 @@ form.registration-form fieldset {
   display: none;
 }
 
-
+.compul{
+  color: red;
+}
 .title{
   font-family: 'Righteous', cursive;
 }
