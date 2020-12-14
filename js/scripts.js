@@ -241,17 +241,17 @@
     //     });
 
     // });
-  //   $('#wrong').hide();
-  //   $('#form_submit').click(function(){
-  //     $('input').each(function() {
-  //         if(!$(this).val()){
-  //             $('#wrong').show();
-  //             setTimeout(function(){
-  //               $('#wrong').hide();
-  //           },5000);
-  //         }
-  //     });
-  // });
+    $('#wrong').hide();
+    $('#form_submit').click(function(){
+      $('input').each(function() {
+          if(!$(this).val()){
+              $('#wrong').show();
+              setTimeout(function(){
+                $('#wrong').hide();
+            },5000);
+          }
+      });
+   });
   
   setTimeout(function(){
     $('.modal').modal({show:true});
