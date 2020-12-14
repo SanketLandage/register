@@ -248,7 +248,7 @@
               $('#wrong').show();
               setTimeout(function(){
                 $('#wrong').hide();
-            },5000);
+            },8000);
           }
       });
    });
