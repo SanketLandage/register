@@ -35,13 +35,15 @@ function submitForm(e){
 
     saveMessages(name , phone , email, address , profit , idea , statement , description , how , goal);
 
-    document.querySelector('.alert').style.display="block";
+    
 
+    document.querySelector('.alert').style.display="block";
     setTimeout(function(){
         document.querySelector('.alert').style.display="none";
     },5000);
 
     document.getElementById('registerForm').reset();
+    
   
 }
 

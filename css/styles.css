@@ -431,6 +431,15 @@ form.registration-form fieldset {
   display: none;
 }
 
+.alertRed{
+  text-align: center;
+  padding: 10px;
+  background: #e96060;
+  color :white;
+  display: none;
+}
+
+
 .title{
   font-family: 'Righteous', cursive;
 }

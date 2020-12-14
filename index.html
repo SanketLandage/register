@@ -25,7 +25,6 @@
             <div class="container">
                 <h3><a class="navbar-brand js-scroll-trigger text-white font-weight-bold" href="#page-top"></a>
                 </h3>
-                
             </div>
         </nav>
         <!-- Masthead-->
@@ -52,6 +51,7 @@
                 <div class="row justify-content-center">
                     <h2 class="text-center mt-5">Register Here!</h2>
                     <p class="text-center p-1">Note:-All the fields are mandatory *</p>
+                    <p class="text-center"><a href="./Terms.html">Terms and conditions </a></p>
                     <div class="row justify-content-center">
                         <div class="col-md-6 form-box">
                             <form role="form" class="registration-form mb-4" action="javascript:void(0);" id="registerForm">
@@ -67,25 +67,29 @@
                                     <div class="form-bottom">
                                         
                                         <div class="form-group p-1">
-                                            <input type="text" class="form-control" placeholder="Name" id="name" required>
+                                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                            <span class="align-self-center" id="name_error_msg"></span>
                                         </div>
                                             
                                        
                                         <div class="form-group p-1" style="margin-bottom:3px;">
                                                 <div class="form-group ">
-                                                    <input type="text" class="form-control" placeholder="Contact Number" id="phone" pattern="[789][0-9]{9}" required >
+                                                    <input type="text" class="form-control" name="phone" placeholder="Contact Number" id="phone" pattern="[0-9]{10}" required >
+                                                    <span class="align-self-center" id="phone_error_msg"></span>
                                                 </div>
                                         </div>
 
                                         <div class="form-group p-1">
-                                            <input type="email" name="email" placeholder="Email" class="form-email form-control" id="email" required>
+                                            <input type="email" name="email" placeholder="Email" class="form-control" id="email"  required>
+                                            <span class="align-self-center" id="mail_error_msg"></span>
                                         </div>
             
                                         <div class="form-group p-1">
-                                            <input type="text" class="form-control" placeholder="Address" id="address">
+                                            <input type="text" class="form-control" placeholder="Address" id="address" name="address">
+                                            <span class="align-self-center" id="add_error_msg"></span>
                                         </div>
                                         
-                                        <button type="button" class="btn btn-next mt-1">Next</button>
+                                        <button type="button " class="btn btn-next mt-1" >Next</button>
 
                                     </div>
                                 </fieldset>
@@ -98,41 +102,49 @@
                                     </div>
                                     <div class="form-bottom">
                                         <div class="form-group" id="profit" required>
-                                            <p>1. Profitable or Non-profitable idea ?</p>
+                                            <p>1. Profitable or Non-profitable idea ? *</p>
                                             <input type="radio" id="p1" value="Profitable" name="pr">
                                             <label for="p1">Profitable</label>
                                             <input type="radio" id="p2" value="NonProfit" name="pr">
                                             <label for="p2">Non-Profitable</label>
+                                            
                                         </div><hr>
                                         <div class="form-group mt-2" required >
-                                            <p>2. Idea stage or running business ?</p>
+                                            <p>2. Idea stage or running business ? *</p>
                                             <input type="radio" id="idea" value="idea_only" name="idea">
                                             <label for="idea">Just a idea</label>
                                             <input type="radio" id="business" value="Running business" name="idea">
                                             <label for="business">Running Business</label>
                                         </div><hr>
+
                                         <div class="form-group " required>
-                                            <p>3. Idea Statement </p>
+                                            <p>3. Idea Statement *</p>
                                             <input type="text" id="statement" class="form-control" >
+                                            <span class="align-self-center" id="state_error_msg"></span>
                                         </div><hr>
+
                                         <div class="form-group " required>
-                                            <p>4. Idea Description </p>
+                                            <p>4. Idea Description *</p>
                                             <textarea name="desc" id="description" cols="30" rows="3" class="form-control" ></textarea>
+                                            <span class="align-self-center" id="desc_error_msg"></span>
                                         </div><hr>
+
                                         <div class="form-group " required>
-                                            <p>5. How did you came across this idea ? </p>
+                                            <p>5. How did you came across this idea ? *</p>
                                             <textarea name="how" id="how" cols="30" rows="2" class="form-control" ></textarea>
+                                            <span class="align-self-center" id="how_error_msg"></span>
                                         </div><hr>
                                         <div class="form-group " required>
-                                            <p>6. What is the end goal you expect the business to achieve ? </p>
+                                            <p>6. What is the end goal you expect the business to achieve ? *</p>
                                             <textarea name="goal" id="goal" cols="30" rows="2" class="form-control" ></textarea>
                                         </div><hr>
                                         <div class="form-group" required>
                                             <input type="radio" id="Tc" name="Tc" value="TnC accepted">
-                                            <label for="Tc" >I agree to all terms and conditions <a href="./Terms.html">Terms and conditions </a></label>
+                                            <label for="Tc" >I agree to all terms and conditions</label>
+                                            <p class="text-center"><a href="./Terms.html">Terms and conditions </a></p>
                                         </div>
                                         <button type="button" class="btn btn-previous mt-1">Previous</button>
-                                        <button type="submit" class="btn mt-1" >Submit</button><hr>
+                                        <button type="submit" class="btn mt-1" id="form_submit">Submit</button><hr>
                                         <div class="alert alert primary"> You have successfully registered for the !deathon</div>
                                     </div>
                                 </fieldset>
