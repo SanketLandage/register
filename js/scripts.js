@@ -57,6 +57,18 @@
     $('#address').on('focusout',function() {
       check_address();
     })
+    $('#description').on('focusout',function() {
+      check_desc();
+    })
+    $('#how').on('focusout',function() {
+      check_how();
+    })
+    $('#goal').on('focusout',function() {
+      check_goal();
+    })
+    $('#statement').on('focusout',function() {
+      check_statement();
+    })
     
 
     function check_name(){
@@ -172,7 +184,71 @@
     });
    });
 
-   
+   function check_statement(){
+    var stVal = $('#statement').val();
+    if(stVal.length == ''){
+      $('#state_error_msg').html("idea Statement is required!");
+        $('#state_error_msg').show();
+        $('#statement').css("border" ,"1px solid #F90A0A");
+        // setTimeout(function(){
+        //   $('#desc_error_msg').hide();
+        // },5000);
+      }
+      else{
+        $('#statement').css("border" ,"1px solid #34F458");
+        $('#state_error_msg').hide();
+      }
+    
+   };
+
+  function check_desc(){
+    var descVal = $('#description').val();
+    if(descVal.length < 50 || descVal==''){
+      $('#desc_error_msg').html("Atleast 50 characters required");
+        $('#desc_error_msg').show();
+        $('#description').css("border" ,"1px solid #F90A0A");
+        // setTimeout(function(){
+        //   $('#desc_error_msg').hide();
+        // },5000);
+      }
+      else{
+        $('#description').css("border" ,"1px solid #34F458");
+        $('#desc_error_msg').hide();
+      }
+    };
+
+    function check_how(){
+      var howVal = $('#how').val();
+      if(howVal == ''){
+        $('#how_error_msg').html("Please fill this field");
+          $('#how_error_msg').show();
+          $('#how').css("border" ,"1px solid #F90A0A");
+          // setTimeout(function(){
+          //   $('#desc_error_msg').hide();
+          // },5000);
+        }
+        else{
+          $('#how').css("border" ,"1px solid #34F458");
+          $('#how_error_msg').hide();
+        }
+      };
+
+      function check_goal(){
+        var goVal = $('#goal').val();
+        if(goVal == ''){
+          $('#go_error_msg').html("Please fill this field");
+            $('#go_error_msg').show();
+            $('#goal').css("border" ,"1px solid #F90A0A");
+            // setTimeout(function(){
+            //   $('#desc_error_msg').hide();
+            // },5000);
+          }
+          else{
+            $('#goal').css("border" ,"1px solid #34F458");
+            $('#go_error_msg').hide();
+          }
+        };
+  
   setTimeout(function(){
     $('#exampleModalCenter').modal({show:true});
   }, 9000);
