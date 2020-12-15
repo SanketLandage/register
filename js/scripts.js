@@ -162,12 +162,20 @@
             },8000);
           }
       });
+      $('textarea').each(function() {
+        if(!$(this).val()){
+            $('#wrong').show();
+            setTimeout(function(){
+              $('#wrong').hide();
+          },8000);
+        }
+    });
    });
 
    
   setTimeout(function(){
     $('#exampleModalCenter').modal({show:true});
-  }, 10000);
+  }, 9000);
   
   
 });
