@@ -35,49 +35,62 @@
                         <img src="./assets/img/logo.png" alt="" style="width:100px; height:80px;">
                         <!-- <h2 class="text-white-50 font-weight-bold title"> Entie  </h2>  -->
                         <h1 class="font-weight-bold title text-white-50 mt-3"> !deathon </h1>
-                        
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <h4 class="text-white-50  font-weight-light mb-5">For it's an !dea that changes the world..</h4>
-                        <button class="btn btn-primary text-white"> <a class="js-scroll-trigger" href="#about">Register!!</a></button>     
-                        
+                        <h4 class="text-white-50  tag mb-2">For an !dea that changes the world...</h4><br>
+                        <h6 class="text-white-50 desc mb-5">The world does not change itself. It's the ideas that shape it. That make it better. Introducing Ideathon, for an idea that changes the world... 
+                            A three stage contest, it focuses on the biggest idea that has the potential to change the world.</h6>
+                        <button class="btn btn-primary text-white"> <a class="js-scroll-trigger" href="#about">Register!!</a></button>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
         </header>
 
 
+        <div class="modal fade " id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-body ">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="text-center">Whats's Next ?</h4>
+                            <p class="card-text"> Your part in the first round is over. If you are selected for the second round, you will be notified by email.</p>
+                            <hr>
+                            <p class="card-text">
+                                The second round requires the selected contestants to create a business model canvas according to your idea.
+                    But till then, sit back and relax...
+                            </p>
+                        </div>
+                    </div>
+                   <!-- <h4 class="text-center"> Thanks for participating in the contest.</h4> 
+                   <p class="mt-2"> Your part in the first round is over. 
+                    If you are selected for the second round, you will be notified by email. </p>
+                    
+                    The second round requires the selected contestants to create a business model canvas according to your idea.
+                    But till then, sit back and relax... -->
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class=" modBut m-3" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
               <div class="modal-content">
-                <div class="modal-header modHead">
+                <!-- <div class="modal-header modHead">
                   <h5 class="modal-title" id="exampleModalLongTitle">Register and get a chance to win amazing prizes.</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                </div>
+                </div> -->
                 <div class="modal-body bgMod">
-                    <h4 class="text-white">1st Prize</h4>
-                    <ol style="text-align:left;"> 
-                        <li>Startup of the Year Award</li>
-                        <li>Premium Subscription of Entie for 1 year</li>
-                        <li>Business Pitch deck powered by Meticulous B-plans </li>
-                    </ol> <hr>
-                    <h4 class="text-white">2nd Prize</h4>
-                    <ol style="text-align:left;"> 
-                        <li>Digital Badge</li>
-                        <li>Premium Subscription of Entie for 6 months</li>
-                        <li>Digital Certificate of Merit </li>
-                    </ol><hr>
-                    <h4 class="text-white">3rd Prize</h4>
-                    <ol style="text-align:left;"> 
-                        <li>Digital Badge</li>
-                        <li>Premium Subscription of Entie for 3 months</li>
-                        <li>Digital Certificate of Merit </li>
-                    </ol><hr>
-                    <h6 class="text-white">All the participants will receive a Participation Certificate!</6>
-                    
+                    <img src="./assets/img/popup-2.png" class="img-responsive" style=" max-height:450px; max-width: 100%;height:auto;" alt="">
                 </div>
                 <div class="modal-footer justify-content-center">
                   <button type="button" class=" modBut m-3" data-dismiss="modal">Close</button>
@@ -93,7 +106,7 @@
                 <div class="row justify-content-center">
                     <h3 class="text-center mt-5">Register to win the amazing Prizes</h3>
                     <button type="button" class="modBut" data-toggle="modal" data-target="#exampleModalCenter">
-                        You may win these prizes!
+                        Whats's in it for you ?
                     </button>
                     <br>
                     <br>
@@ -105,7 +118,7 @@
                                 <fieldset>
                                     <div class="form-top">
                                         <div class="form-top-left">
-                                            <h5 class="text-center p-1 mt-3">Please tell us more about your idea </h5>
+                                            <h5 class="text-center p-1 mt-3">Please tell us about your idea </h5>
                                         </div>
                                     </div>
                                     <div class="form-bottom">
@@ -133,7 +146,7 @@
 
                                         <div class="form-group " required>
                                             <p>4. Idea Description <span class="compul">*</span></p>
-                                            <textarea name="desc" id="description" cols="30" rows="3" class="form-control" ></textarea>
+                                            <textarea name="desc" id="description" cols="30" rows="4" class="form-control" minlength="50" maxlength="300" ></textarea>
                                             <span class="align-self-center" id="desc_error_msg"></span>
                                         </div><hr>
 
@@ -146,11 +159,7 @@
                                             <p>6. What is the end goal you expect the business to achieve ? <span class="compul">*</span></p>
                                             <textarea name="goal" id="goal" cols="30" rows="2" class="form-control" ></textarea>
                                         </div><hr>
-                                        <div class="form-group" required>
-                                            <input type="radio" id="Tc" name="Tc" value="TnC accepted" required>
-                                            <label for="Tc" >I agree to all terms and conditions</label> <a href="./Terms.html" class="tcF">Read T&c </a>
-                                            
-                                        </div>
+                                        
                                         <button type="button " class="btn btn-next mt-1" >Next</button>
                                     </div>
                                 </fieldset>
@@ -188,11 +197,16 @@
                                             <span class="align-self-center" id="add_error_msg"></span>
                                         </div>
                                         
-                                       
+                                        <div class="form-group" required>
+                                            <input type="radio" id="Tc" name="Tc" value="TnC accepted" required>
+                                            <label for="Tc" >By clicking submit, you agree to our </label> <a href="./Terms.html" class="tcF">Read T&C </a>
+                                            
+                                        </div>
                                         <button type="button" class="btn btn-previous mt-1">Previous</button>
                                         <button type="submit" class="btn mt-1" id="form_submit">Submit</button><hr>
                                         <div class="alertRed " id="wrong"> Something is wrong! Please fill all the form fields.</div>
-                                        <div class="alert "> You have successfully registered for the !deathon</div>
+                                        <div class="alert "><h4> You have successfully registered for the !deathon...!! </h4>
+                                        <button class="btn " data-toggle="modal" data-target="#exampleModalCenter2"> What's Next ?</button></div>
                                     </div>
                                 </fieldset>
 

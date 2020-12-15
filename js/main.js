@@ -38,10 +38,10 @@ function submitForm(e){
     
 
     document.querySelector('.alert').style.display="block";
-    setTimeout(function(){
-        document.querySelector('.alert').style.display="none";
-    },8000);
-
+    // setTimeout(function(){
+    //     document.querySelector('.alert').style.display="none";
+    // },20000);
+    
     document.getElementById('registerForm').reset();
     
   

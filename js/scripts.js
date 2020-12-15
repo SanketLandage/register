@@ -57,16 +57,7 @@
     $('#address').on('focusout',function() {
       check_address();
     })
-    $('#statement').on('focusout',function() {
-      check_statement();
-    })
-    $('#statement').on('focusout',function() {
-      check_how();
-    })
-
-    $('#statement').on('focusout',function() {
-      check_desc();
-    })
+    
 
     function check_name(){
       $('#name_error_msg').hide();
@@ -153,14 +144,14 @@
 
     });
 
-    
+    ////prev button
     $('.registration-form .btn-previous').on('click', function () {
         $(this).parents('fieldset').fadeOut(400, function () {
             $(this).prev().fadeIn();
         });
     });
 
-    
+    ///Display error message if form is not filled completely
     $('#wrong').hide();
     $('#form_submit').click(function(){
       $('input').each(function() {
@@ -172,10 +163,11 @@
           }
       });
    });
-  
+
+   
   setTimeout(function(){
-    $('.modal').modal({show:true});
-  }, 4000);
+    $('#exampleModalCenter').modal({show:true});
+  }, 8000);
   
   
 });
