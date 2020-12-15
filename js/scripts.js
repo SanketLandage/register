@@ -167,7 +167,7 @@
    
   setTimeout(function(){
     $('#exampleModalCenter').modal({show:true});
-  }, 8000);
+  }, 10000);
   
   
 });
