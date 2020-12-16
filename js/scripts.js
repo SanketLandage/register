@@ -147,7 +147,7 @@
     $('.registration-form .btn-next').on('click', function () {
         var parent_fieldset = $(this).parents('fieldset');
         var next_step = false;
-        if($('#statement').val()=='' || $('#description').val()=='' || $('#how').val()=='' || $('#goal').val()==''){
+        if($('#statement').val()=='' || $('#description').val()=='' || $('#description').val().length < 50 || $('#how').val()=='' || $('#goal').val()==''){
             next_step = false;
         }
         else{
