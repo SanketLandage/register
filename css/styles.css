@@ -60,12 +60,23 @@ body {
   background-color: #fff;
 }
 
-
+.content {
+  position: center;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.381);
+  opacity: 0.4; 
+  box-shadow: 0px 30px 25px rgba(248, 242, 242, 0.34);
+  /* Black background with 0.5 opacity */
+  /* color: #f1f1f1; */
+  width: auto;
+  padding: 20px;
+}
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -211,8 +222,8 @@ button.btn {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: linear-gradient(to bottom, rgba(14, 13, 66, 0.795) 0%, rgba(14, 13, 66, 0.795) 100%);
-    ;
+    background: linear-gradient(to bottom, rgb(3, 1, 94) 0%, rgb(14, 14, 12) 100%);
+    
     border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -383,7 +394,7 @@ h3 {
 .form-top {
     overflow: hidden;
     padding: 0 25px 15px 25px;
-    background: linear-gradient(to bottom, rgba(14, 13, 66, 0.795) 0%, rgba(14, 13, 66, 0.795) 100%);
+    background: linear-gradient(to bottom, rgb(3, 1, 94) 0%, rgb(14, 14, 12) 100%);
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
@@ -445,6 +456,7 @@ form.registration-form fieldset {
 }
 .title{
   font-family: 'Righteous', cursive;
+  text-shadow: 1px 2px 3px black, 0 0 25px rgb(15, 15, 87), 0 0 5px rgb(5, 5, 59);
 }
 
 .bgMod{
@@ -464,7 +476,7 @@ form.registration-form fieldset {
     padding-left: 10px;
     padding-right:10px;
     vertical-align: middle;
-    background: linear-gradient(to bottom, rgba(2, 2, 5, 0.856) 0%, rgba(2, 2, 5, 0.856) 100%);
+    background: linear-gradient(to bottom, rgba(12, 12, 56, 0.856) 0%, rgba(4, 81, 112, 0.856) 100%);
     
     border: 0;
     font-family: 'Roboto', sans-serif;
@@ -485,6 +497,7 @@ a:hover{
 
 .modal{
   max-height: auto;
+  padding: 0px;
 }
 
 .desc{
@@ -494,4 +507,5 @@ a:hover{
 .tag{
   font-family: 'El Messiri', sans-serif;
   font-size: 25px;
+  text-shadow: 1px 2px 3px black, 0 0 15px rgb(19, 19, 82), 0 0 2px rgb(18, 18, 63);
 }

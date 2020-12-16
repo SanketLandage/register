@@ -253,7 +253,10 @@
     $('#exampleModalCenter').modal({show:true});
   }, 9000);
   
-  
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 });
 
 })(jQuery); // End of use strict

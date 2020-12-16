@@ -34,12 +34,12 @@
                     <div class="col-lg-10 align-self-end">
                         <img src="./assets/img/logo.png" alt="" style="width:100px; height:80px;">
                         <!-- <h2 class="text-white-50 font-weight-bold title"> Entie  </h2>  -->
-                        <h1 class="font-weight-bold title text-white-50 mt-3"> !deathon </h1>
+                        <h1 class="font-weight-bold title text-white mt-3"> !deathon </h1>
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <h4 class="text-white-50  tag mb-2">For an !dea that changes the world...</h4><br>
-                        <h6 class="text-white-50 desc mb-5">The world does not change itself. It's the ideas that shape it. That make it better. Introducing Ideathon, for an idea that changes the world... 
+                        <h4 class="text-white  tag mb-2">For an !dea that changes the world...</h4><br>
+                        <h6 class="text-white desc mb-5 content ">The world does not change itself. It's the ideas that shape it. That make it better. Introducing Ideathon, for an idea that changes the world... 
                             A three stage contest, it focuses on the biggest idea that has the potential to change the world.</h6>
                         <button class="btn btn-primary text-white"> <a class="js-scroll-trigger" href="#about">Register!!</a></button>
                         <br>
@@ -81,20 +81,22 @@
 
 
         <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="">
                 <!-- <div class="modal-header modHead">
                   <h5 class="modal-title" id="exampleModalLongTitle">Register and get a chance to win amazing prizes.</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div> -->
-                <div class="modal-body bgMod">
-                    <img src="./assets/img/popup-2.png" class="img-responsive" style=" max-height:450px; max-width: 100%;height:auto;" alt="">
+                
+                <div class="">
+                    
+                    <img src="./assets/img/popup-1.png" class="img-responsive" style=" min-height:400px; min-width:350px;max-width: 100%;height:auto;" alt="">
                 </div>
-                <div class="modal-footer justify-content-center">
-                  <button type="button" class=" modBut m-3" data-dismiss="modal">Close</button>
-                </div>
+                <!-- <div class=" justify-content-center">
+                  <button type="button" class=" modBut " data-dismiss="modal">Close</button>
+                </div> -->
               </div>
             </div>
           </div> 
@@ -106,7 +108,7 @@
                 <div class="row justify-content-center">
                     <h3 class="text-center mt-5">Register to win the amazing Prizes</h3>
                     <button type="button" class="modBut" data-toggle="modal" data-target="#exampleModalCenter">
-                        Whats's in it for you ?
+                        What's in it for you ?
                     </button>
                     <br>
                     <br>
@@ -123,7 +125,7 @@
                                     </div>
                                     <div class="form-bottom">
                                         <div class="form-group" id="profit" required>
-                                            <p>1. Profitable or Non-profitable idea ? <span class="compul">*</span></p>
+                                            <p>1. Profitable or Non-profitable idea ? <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Is your idea a revenue making or social service?"></i></p>
                                             <input type="radio" id="p1" value="Profitable" name="pr">
                                             <label for="p1">Profitable</label>
                                             <input type="radio" id="p2" value="NonProfit" name="pr">
@@ -131,7 +133,7 @@
                                             
                                         </div><hr>
                                         <div class="form-group mt-2" required id="ib" >
-                                            <p>2. Idea stage or running business ? <span class="compul">*</span></p>
+                                            <p>2. Idea stage or running business ? <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Just an idea or you have ruunig business ?"></i></p>
                                             <input type="radio" id="idea" value="idea_only" name="idea">
                                             <label for="idea">Just an idea</label>
                                             <input type="radio" id="business" value="Running business" name="idea">
@@ -139,24 +141,24 @@
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>3. Idea Statement <span class="compul">*</span></p>
-                                            <input type="text" id="statement" class="form-control" >
+                                            <p>3. Idea Statement <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Title of your idea" ></i></p>
+                                            <input type="text" id="statement" class="form-control" placeholder="Title of your idea">
                                             <span class="align-self-center" id="state_error_msg"></span>
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>4. Idea Description <span class="compul">*</span></p>
+                                            <p>4. Idea Description <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Please describe your idea."></i></p>
                                             <textarea name="desc" id="description" cols="30" rows="4" class="form-control" minlength="50" maxlength="300" required placeholder="Min 50 characters required !"></textarea>
                                             <span class="align-self-center" id="desc_error_msg"></span>
                                         </div><hr>
 
                                         <div class="form-group " required>
-                                            <p>5. How did you come across this idea ? <span class="compul">*</span></p>
+                                            <p>5. How did you come across this idea ? <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="please tell us how you got this idea "></i></p>
                                             <textarea name="how" id="how" cols="30" rows="2" class="form-control" required></textarea>
                                             <span class="align-self-center" id="how_error_msg"></span>
                                         </div><hr>
                                         <div class="form-group " required>
-                                            <p>6. What is the end goal you expect the business to achieve ? <span class="compul">*</span></p>
+                                            <p>6. What is the end goal you expect the business to achieve ? <span class="compul">*</span> <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="What you want to achieve with this idea?"></i></p>
                                             <textarea name="goal" id="goal" cols="30" rows="2" class="form-control" required></textarea>
                                             <span class="align-self-center" id="go_error_msg"></span>
                                         </div><hr>
@@ -200,7 +202,7 @@
                                         
                                         <div class="form-group" required>
                                             <input type="radio" id="Tc" name="Tc" value="TnC accepted" required>
-                                            <label for="Tc" >By clicking submit, you agree to our </label> <a href="./Terms.html" class="tcF">Read T&C </a>
+                                            <label for="Tc" >By clicking submit, you agree to our </label> <a href="./Terms.html" class="tcF"> T&C </a>
                                             
                                         </div>
                                         <button type="button" class="btn btn-previous mt-1">Previous</button>
@@ -210,13 +212,12 @@
                                         <button class="btn " data-toggle="modal" data-target="#exampleModalCenter2"> What's Next ?</button></div>
                                     </div>
                                 </fieldset>
-
-                                
                             </form>
                         </div>
             
 
                 </div>
+                
             </div>
             <hr>
         </section>
