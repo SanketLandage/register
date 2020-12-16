@@ -146,8 +146,14 @@
     // next step
     $('.registration-form .btn-next').on('click', function () {
         var parent_fieldset = $(this).parents('fieldset');
-        var next_step = true;
-
+        var next_step = false;
+        if($('#statement').val()=='' || $('#description').val()=='' || $('#how').val()=='' || $('#goal').val()==''){
+            next_step = false;
+        }
+        else{
+          next_step = true;
+        }
+        
         if (next_step) {
             parent_fieldset.fadeOut(400, function () {
                 $(this).next().fadeIn();
